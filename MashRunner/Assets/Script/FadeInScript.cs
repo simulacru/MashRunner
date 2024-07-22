@@ -14,12 +14,6 @@ public class FadeInScript : MonoBehaviour
         StartCoroutine(FadeIn());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     IEnumerator FadeIn()
     {
         Color color = fadeImage.color;

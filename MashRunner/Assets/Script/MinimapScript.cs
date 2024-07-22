@@ -13,12 +13,6 @@ public class MinimapScript : MonoBehaviour
         SetUp();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void SetUp()
     {
         if (PlayerCameraScript.joinPlayerCount < 2) //1lƒvƒŒƒCŽž

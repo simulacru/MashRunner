@@ -64,9 +64,13 @@ public class PlayerOtherController : MonoBehaviour
     {
         //二人プレイ時にUIの位置を変更
         if (2 <= PlayerCameraScript.joinPlayerCount && PlayerCameraScript.joinPlayerCount < 3)
+        {
             mainUI.GetComponent<RectTransform>().anchoredPosition = new Vector2(-520, 0);
+        }
         else
+        {
             mainUI.GetComponent<RectTransform>().anchoredPosition = new Vector2(-220, 0);
+        }
 
         //ゴールした後に少し右へ移動
         if (isGoal)
@@ -98,7 +102,9 @@ public class PlayerOtherController : MonoBehaviour
     {
         //確認UIを表示
         if (SceneManager.GetActiveScene().name == "PlayerJoinScene")
+        {
             isReady = true;
+        }  
     }
 
     //メニュー画面へ

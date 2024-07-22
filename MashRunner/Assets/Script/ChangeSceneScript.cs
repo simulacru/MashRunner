@@ -12,18 +12,6 @@ public class ChangeSceneScript : MonoBehaviour
     public FadeOutScript fadeOutScript;
     public MenuSEScript menuSEScript;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     //éüÇÃÉVÅ[ÉìÇ÷
     public void OnGo(InputAction.CallbackContext context)
     {

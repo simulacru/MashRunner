@@ -36,6 +36,7 @@ public class ResultScript : MonoBehaviour
                 break;
             }
         }
+
         if (!isResult)
             image.enabled = false;
     }

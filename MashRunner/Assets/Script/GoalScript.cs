@@ -37,7 +37,6 @@ public class GoalScript : MonoBehaviour
         if (maxPlayerCount <= goalPlayerCount)
         {
             canGool = false;
-            Debug.Log("ゲーム終了");
 
             playerCount = maxPlayerCount;
             isGoalMax = true;
@@ -59,6 +58,7 @@ public class GoalScript : MonoBehaviour
             {
                 rankArray[i] = 0; // プレイヤーの順位を初期化
             }
+
             goalPlayerCount = 0;
             ResultMenuScript.canGoal = false;
         }
@@ -70,7 +70,6 @@ public class GoalScript : MonoBehaviour
         {
             //ゴールに到達した人数をカウント
             goalPlayerCount++;
-            Debug.Log($"playerCount: {goalPlayerCount}");
         }
     }
 

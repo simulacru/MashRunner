@@ -18,12 +18,6 @@ public class MenuSEScript : MonoBehaviour
         audio = gameObject.GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    { 
-
-    }
-
     //Ÿ‚ÌƒV[ƒ“‚Ö
     public void NextSceneSE()
     {

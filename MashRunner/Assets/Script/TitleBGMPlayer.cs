@@ -15,6 +15,7 @@ public class TitleBGMPlayer : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         if (soundStop)
         {
             isLoad = false;
@@ -22,14 +23,10 @@ public class TitleBGMPlayer : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         isLoad = true;
         DontDestroyOnLoad(gameObject);
         audio = gameObject.GetComponent<AudioSource>();
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -48,6 +45,7 @@ public class TitleBGMPlayer : MonoBehaviour
     {
         audio.Stop();
     }
+
     public void BGMOn()
     {
         audio.Play();

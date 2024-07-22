@@ -27,12 +27,6 @@ public class StageSlectControll : MonoBehaviour
         selectButton.Select();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     //ステージ1へ
     public void Stage1()
     {

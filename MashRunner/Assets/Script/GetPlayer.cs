@@ -34,12 +34,6 @@ public class GetPlayer : MonoBehaviour
         Debug.Log($"===== プレイヤー#{playerInput.user.index} =====");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void Userindex()
     {
         //タグを取得

@@ -57,12 +57,6 @@ public class MenuControll : MonoBehaviour
         PlayerOtherController.isBack = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     //プレイヤー参加画面へ
     public void OnPlay()
     {

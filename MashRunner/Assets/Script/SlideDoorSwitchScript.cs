@@ -28,9 +28,7 @@ public class SlideDoorSwitchScript : MonoBehaviour
     void Update()
     {
         if(isMoveDoor)
-        {
             MoveDoor();
-        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

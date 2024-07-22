@@ -59,23 +59,15 @@ public class ChildPlayerController : MonoBehaviour
         //移動
         anim.SetBool("Move Anim", moveInput.x != 0 || (isGoal && current.x < 1060)); //ゴール後
         if (moveInput.x < 0.0f)
-        {
             this.GetComponent<SpriteRenderer>().flipX = true;
-        }
         else if (moveInput.x > 0.0f)
-        {
             this.GetComponent<SpriteRenderer>().flipX = false;
-        }
 
         //ジャンプ
         if (!isJump)
-        {
             anim.SetBool("Jump Anim", true);
-        }
         else if (isJump)
-        {
             anim.SetBool("Jump Anim", false);
-        }
 
         //スライディング
         if (isSlide)
@@ -93,12 +85,8 @@ public class ChildPlayerController : MonoBehaviour
 
         //速度変化
         if (isJump && isDash && chageGauge > 0 && anim.speed != 1.5f)
-        {
             anim.speed = 1.5f;
-        }
         else if (anim.speed != 1.0f)
-        {
             anim.speed = 1.0f;
-        }
     }
 }

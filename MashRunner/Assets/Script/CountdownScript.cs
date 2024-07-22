@@ -32,9 +32,7 @@ public class CountdownScript : MonoBehaviour
     void Update()
     {
         if (canCountdown)
-        {
             Countdown();
-        }
 
         //カウントダウンリセット
         if (SceneManager.GetActiveScene().name == "ResultScene" || SceneManager.GetActiveScene().name == "StageSelectScene" || SceneManager.GetActiveScene().name == "PlayerJoinScene")
